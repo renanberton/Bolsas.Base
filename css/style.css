@@ -325,12 +325,12 @@ margin-bottom: -20px;
 
 .contato h2:after {
 	content: "";
-	width: 250px;
+	width: 150px;
 	height: 3px;
 	background: #CA989A;
 	display: block;
 	margin-top: 15px;
-	margin-left: 25px;
+	margin-left: 70px;
 }
 
 .footer div.redes {
