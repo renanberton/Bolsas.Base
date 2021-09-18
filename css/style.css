@@ -69,7 +69,7 @@ html, body {
 
 .pre-footer {
 	margin-top: 100px;
-	height: 175px;
+	height: 220px;
 	background-color: #E9CDC2;
 }
 
@@ -127,14 +127,6 @@ html, body {
 	margin-left: 0px;
 }
 
-.contato h2:after {
-	content: "";
-	width: 100px;
-	height: 3px;
-	background: #CA989A;
-	display: block;
-	margin-top: 10px;
-}
 
 .redes {
 	margin-top: 30px;
@@ -323,15 +315,6 @@ margin-bottom: -20px;
 	font-style: normal;
 }
 
-.contato h2:after {
-	content: "";
-	width: 150px;
-	height: 3px;
-	background: #CA989A;
-	display: block;
-	margin-top: 15px;
-	margin-left: 70px;
-}
 
 .footer div.redes {
 	float: none;
