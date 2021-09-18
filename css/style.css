@@ -78,8 +78,8 @@ html, body {
 	font-size: 20px;
 	line-height: 26px;
 	color: #9A6769;
-	margin-top: 30px;
-	margin-bottom: 40px;
+	margin-top: 40px;
+	margin-bottom: 30px;
 	font-weight: bold;
 	text-align: center;
 }
@@ -126,6 +126,7 @@ html, body {
 	float: left;
 	margin-left: 0px;
 }
+
 
 
 .redes {
@@ -233,7 +234,7 @@ margin-bottom: -30px;
 }
 
 
-/* Fim Estilo Tablet */
+/* Fim Estilo do Index */
 
 
 /*Estilo para Celular */ 
@@ -284,11 +285,11 @@ margin-bottom: -20px;
 }
 
 .pre-footer {
-	margin-top: 50px;
-	height: 260px;
+display: none;
 }
 
 .footer {
+	margin-top: 50px;
 	height: 250px;
 	text-align: center;
 }
@@ -330,6 +331,8 @@ margin-bottom: -20px;
 	margin-left: 36px;
 }
 
+
+
 }
 
-/*Fim Estilo Celular*/
+
