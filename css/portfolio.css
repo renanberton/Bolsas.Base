@@ -1,0 +1,137 @@
+body {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+
+.header, .intro, .pre-footer, .footer {
+	width: 100%;
+	height: 100%;
+}
+
+.portfolio h1 {
+	margin-top: 40px;
+	text-align: center;
+	font-family: Georgia, "times new roman", arial;
+	font-size: 36px;
+	color: #9A6769;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.portfolio h1:after {
+	content: "";
+	display: block; 
+	width: 250px;
+	height: 3px;
+	background: #9A6769;
+	margin: 8px auto;
+	margin-top: 20px;
+}
+
+.bolsas {
+	margin-top: 80px;
+}
+.bolsas div{
+margin: 20px;
+}
+
+.portfolio {
+	margin-bottom: 100px;
+}
+
+.footer {
+	height: 200px;
+}
+
+
+/*Estilo para tablets*/
+
+@media only screen and (min-width: 788px) and (max-width: 979px) { 
+
+	body {
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	
+	.header, .intro, .pre-footer, .footer {
+		width: 100%;
+		height: 100%;
+	}
+
+	.bolsas  {
+	margin-left: 130px;
+	margin-top: 50px;
+
+	}
+	.bolsas img {
+	height: 220px;
+	width: 220px;
+	}
+
+	.portfolio {
+	margin-bottom: 50px;
+	}
+	.portfolio h1 {
+	margin-bottom: 50px;
+}
+
+	.footer {
+		height: 250px;
+	}
+}
+
+
+/*Estilo pra celular */
+
+@media only screen and (max-width: 787px) {
+
+
+	body {
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	
+
+	.header, .intro, .pre-footer, .footer {
+		width: 100%;
+		height: 100%;
+	}
+	.header {
+		height: 350px;
+	}
+
+	.header img {
+		margin-left: 50px;
+		margin-bottom: -6px;
+	}
+	
+	.logo {
+	display: block;
+	margin-bottom: -20px;
+	}
+
+	.header-menu  {
+		margin-top: 4px;
+		display: inline;
+	}
+	
+	.header-menu ul  {
+		margin: auto;
+		width: 180px;
+		text-align: center;
+	}
+	
+	.intro h1 {
+		margin: 20px auto;
+	}
+
+
+	.bolsas {
+		margin-left: -20px;
+	}
+
+	.footer {
+		height: 250px;
+	}
+}
