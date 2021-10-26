@@ -197,8 +197,8 @@ h3 {
     /* Fim Query Smartphone */
     /* Media Query para Tablet */
     @media only screen and (min-width: 788px) and (max-width: 979px) {
-        body {
-            background: green;
+        .header {
+            background: black;
         }
     }
 }
