@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/produtos.css">
 </head>
+<script>
+    document.documentElement.classList.add("js");
+</script>
 
 <body>
     <header class="header">
@@ -37,8 +40,8 @@
 
     <section class="produtos">
         <h1>Produtos</h1>
-        <div class="produto-container">            
-            <div class="bolsa-preta bolsas">
+        <div class="produto-container" data-slide="principal">
+            <div class="bolsas">
                 <img src="./img/bolsa-preta.png" alt="Foto Bolsa-Preta">
                 <div class="produtos-info">
                     <ul>
@@ -57,10 +60,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="bolsa-red bolsas">
+            <div class="bolsas">
                 <img class src="./img/bolsa-red.png" alt="Foto Bolsa Vermelha">
                 <div class="produtos-info">
-                    
+
                     <ul>
                         <li>
                             <p>- Produto Artesanal.</p>
@@ -76,10 +79,9 @@
                         </li>
                     </ul>
                 </div>
-                
-            </div>
 
-            <div class="bolsa-preta bolsas">
+            </div>
+            <div class="bolsas">
                 <img src="./img/bolsa-cinza.png" alt="Foto Bolsa Cinza">
                 <div class="produtos-info">
                     <ul>
@@ -98,8 +100,139 @@
                     </ul>
                 </div>
             </div>
-        </div>
 
+            <div class="bolsas">
+                <img src="./img/bolsa-pink.png" alt="Foto Bolsa Cinza">
+                <div class="produtos-info">
+                    <ul>
+                        <li>
+                            <p>- Produto Artesanal.</p>
+                        </li>
+                        <li>
+                            <p>- Qualidade garantida.</p>
+                        </li>
+                        <li>
+                            <p>- Sustentabilidade.</p>
+                        </li>
+                        <li>
+                            <p>- Estilo.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bolsas">
+                <img src="./img/bolsa-black.png" alt="Foto Bolsa Cinza">
+                <div class="produtos-info">
+                    <ul>
+                        <li>
+                            <p>- Produto Artesanal.</p>
+                        </li>
+                        <li>
+                            <p>- Qualidade garantida.</p>
+                        </li>
+                        <li>
+                            <p>- Sustentabilidade.</p>
+                        </li>
+                        <li>
+                            <p>- Estilo.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bolsas">
+                <img src="./img/bolsa-cinza2.png" alt="Foto Bolsa Cinza">
+                <div class="produtos-info">
+                    <ul>
+                        <li>
+                            <p>- Produto Artesanal.</p>
+                        </li>
+                        <li>
+                            <p>- Qualidade garantida.</p>
+                        </li>
+                        <li>
+                            <p>- Sustentabilidade.</p>
+                        </li>
+                        <li>
+                            <p>- Estilo.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bolsas">
+                <img src="./img/bolsa-blue2.png" alt="Foto Bolsa Cinza">
+                <div class="produtos-info">
+                    <ul>
+                        <li>
+                            <p>- Produto Artesanal.</p>
+                        </li>
+                        <li>
+                            <p>- Qualidade garantida.</p>
+                        </li>
+                        <li>
+                            <p>- Sustentabilidade.</p>
+                        </li>
+                        <li>
+                            <p>- Estilo.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bolsas">
+                <img src="./img/bolsa-green.png" alt="Foto Bolsa Cinza">
+                <div class="produtos-info">
+                    <ul>
+                        <li>
+                            <p>- Produto Artesanal.</p>
+                        </li>
+                        <li>
+                            <p>- Qualidade garantida.</p>
+                        </li>
+                        <li>
+                            <p>- Sustentabilidade.</p>
+                        </li>
+                        <li>
+                            <p>- Estilo.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bolsas">
+                <img src="./img/bolsa-grey1.png" alt="Foto Bolsa Cinza">
+                <div class="produtos-info">
+                    <ul>
+                        <li>
+                            <p>- Produto Artesanal.</p>
+                        </li>
+                        <li>
+                            <p>- Qualidade garantida.</p>
+                        </li>
+                        <li>
+                            <p>- Sustentabilidade.</p>
+                        </li>
+                        <li>
+                            <p>- Estilo.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="chamada">
+            <div class="container">
+                <h2>Solicite seu Orçamento</h2>
+                <p>Solicite seu orçamento via e-mail ou Whatsapp acessando os link's abaixo:</p>
+                <div>
+                    <button onclick="location.href='contato.html'"> <img src="./img/email-logo.png"
+                            alt="Link para Whatsapp">E-mail</button>
+                    <button onclick="location.href='https\://api.whatsapp.com/send?phone=5511974169551'"><img
+                            src="./img/twitter-logo.png" alt="Link para Whatsapp"> Whatsapp</button>
+                </div>
+            </div>
+        </section>
     </section>
 
     <section class="footer">
@@ -125,13 +258,19 @@
                     <h3>
                         Redes Sociais
                     </h3>
-                    <a href="http://facebook.com" target="_blank"><img src="./img/face-logo.png" alt="Link para o Facebook"></a>
-                    <a href="https://instagram.com/base.atelie?utm_medium=copy_link" target="_blank"><img src="./img/insta-logo.png" alt="Link para o Instagram"></a>
-                    <a href="https://api.whatsapp.com/send?phone=5511974169551" target="_blank"><img src="./img/twitter-logo.png" alt="Link para Whatsapp"></a>
+                    <a href="http://facebook.com" target="_blank"><img src="./img/face-logo.png"
+                            alt="Link para o Facebook"></a>
+                    <a href="https://instagram.com/base.atelie?utm_medium=copy_link" target="_blank"><img
+                            src="./img/insta-logo.png" alt="Link para o Instagram"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511974169551" target="_blank"><img
+                            src="./img/twitter-logo.png" alt="Link para Whatsapp"></a>
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="./js/simple-slide.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
