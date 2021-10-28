@@ -90,7 +90,7 @@ a {
     height: auto;
 }
 
-.chamada > .container {
+.chamada>.container {
     width: 100%;
     height: auto;
     display: flex;
@@ -102,7 +102,7 @@ a {
     padding: 2.5rem 0;
 }
 
-.chamada > .container button {
+.chamada>.container button {
     color: #000;
     background-color: #E8CCC1;
     border-radius: .7rem;
@@ -115,30 +115,31 @@ a {
     padding: 1.5rem 4rem;
     margin: 1.5rem;
     color: #000;
-    cursor: pointer; /* Indica qual o ícone do cursor em .botoes-orcamento */
+    cursor: pointer;
+    /* Indica qual o ícone do cursor em .botoes-orcamento */
 }
 
-.chamada > .container button > img {
+.chamada>.container button>img {
     height: auto;
     width: 3rem;
     padding: .7rem 0;
 
 }
 
-.chamada > .container p {
+.chamada>.container p {
     color: #fff;
     font-weight: bold;
     font-size: 24px;
     padding: 1.5rem 0;
 }
 
-.chamada > .container button:hover {
+.chamada>.container button:hover {
     transition: 1s;
     color: #000;
     background: #b3d3e6;
 }
 
-.chamada > .container h2 {
+.chamada>.container h2 {
     font-family: arial;
     font-weight: bold;
     font-size: 36px;
@@ -244,11 +245,11 @@ a {
         width: 100%;
     }
 
-    .chamada > .container p {
+    .chamada>.container p {
         text-align: center;
         padding: 5rem;
     }
-    }
+}
 
 
 
@@ -297,15 +298,34 @@ a {
         max-height: 350px;
     }
 
-    .chamada > .container button {
+    .chamada>.container button {
         display: flex;
         width: 100%;
         justify-content: center;
         padding: 2rem 4rem;
     }
 
-    .chamada > .container div {
+    .chamada>.container div {
         display: flex;
     }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    .bolsas img, .bolsas div {
+        width: 250px;
+        margin: auto;
+    }
+
+    .chamada>.container button {
+        display: flex;
+        width: 250px;
+        margin: 1.5rem auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
 
 }
