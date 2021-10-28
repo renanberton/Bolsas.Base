@@ -1,3 +1,10 @@
+:root {
+    --Rosaprimario: #CA989A;
+    --Rosasecundario: #9A6769;
+    --Rosaterciario: #E9CDC2;
+    --Cinzafooter: #615E5E;
+}
+
 html,
 body {
     overflow-y: auto;
@@ -5,13 +12,15 @@ body {
 }
 
 .header {
-    height: 200px;
-    background: #CA989A;
+    height: 13vh;
+    display: flex;
+    background: var(--Rosaprimario);
 }
 
 .container-header {
     max-width: 960px;
     margin: 0 auto;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,15 +53,16 @@ h1 {
     font-size: 36px;
     margin-top: 40px;
     text-align: center;
-    color: #9A6769;
+    color: var(--Rosasecundario);
+    text-transform: uppercase;
 }
 
-.intro h1:after {
+h1:after {
     content: "";
     display: block;
     width: 250px;
     height: 3px;
-    background: #9A6769;
+    background: var(--Rosasecundario);
     margin: 8px auto;
     margin-top: 20px;
 }
@@ -74,7 +84,7 @@ h1 {
 
 .pre-footer {
     height: 175px;
-    background-color: #E9CDC2;
+    background-color: var(--Rosaterciario);
     display: flex;
     flex-wrap: wrap;
 }
@@ -94,7 +104,7 @@ h1 {
 }
 
 .footer {
-    background-color: #615E5E;
+    background-color: var(--Cinzafooter);
     height: 200px;
     display: flex;
     align-items: center;
@@ -126,22 +136,24 @@ h3 {
     line-height: 22px;
 }
 
-.redes img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center center;
-}
+
 
 .redes a img {
     width: 50px;
     height: 50px;
 }
 
-.redes:not(:first) {
+.redes {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+}
+
+.sociais a {
     justify-content: space-between;
+    align-items: space-between;
+    flex-direction: row;
 }
 
 
@@ -160,23 +172,35 @@ h3 {
         align-items: center;
         justify-content: center;
         padding: 1.5rem;
+        margin-bottom: 30px;
     }
     .header-menu ul li {
-        padding: 0.0rem;
-        margin: 20px 0;
+        padding: 5px;
+        margin: 10% 0;
+        ;
     }
     .header-menu ul li a {
         transition: 0.5s;
     }
     .header {
         height: auto;
+        padding: 2rem 0;
     }
+
+
+.bolsa-cinza img, .bolsa-black img {
+        height: 300px;
+        flex-direction: column;
+    }
+    
     /* Fim Header */
     /* Produtos */
     .produtos-container {
         margin-top: 60px;
         justify-content: center;
+        display: flex;
         align-items: center;
+        flex-direction: column;
     }
     .produtos-container .bolsa-black {
         margin-top: 50px;
@@ -184,21 +208,85 @@ h3 {
     /* Fim Produtos */
     /* Footer */
     .footer {
-        flex-direction: column;
+        flex-direction: row;
         display: flex;
+        height: auto;
     }
     .container-footer {
         max-width: 450px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     .historia {
         display: none;
     }
-    /* Fim footer */
-    /* Fim Query Smartphone */
-    /* Media Query para Tablet */
-    @media only screen and (min-width: 788px) and (max-width: 979px) {
-        .header {
-            background: black;
-        }
+
+    .contato {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .sociais {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .sociais a {
+        padding: 0 10px;
+    }
+
+
+}
+
+
+/* Fim footer */
+
+
+/* Fim Query Smartphone */
+
+
+/* Media Query para Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+    .header {
+        height: 25vh;
+        padding: 2rem 0;
+    }
+
+    .header-menu ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 2rem 0;
+    }
+    .container-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .produtos-container {
+        max-width: 600px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .produtos-container .bolsa-black {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .historia {
+        display: none;
+    }
+    .container-footer {
+        max-width: 600px;
     }
 }
+
+
