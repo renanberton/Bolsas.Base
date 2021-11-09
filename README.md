@@ -1,3 +1,4 @@
 ## Bolsas Base
 
-Este é um repositório de treino das linguagens HTML e CSS.
+Website institucional desenvolvido para venda de bolsas online.
+Tecnologias utilizadas: HTML, CSS, um pouco de Javascript e PHP no formulário de envio de email.
